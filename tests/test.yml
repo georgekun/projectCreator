@@ -1,0 +1,5 @@
+src:
+  domains: null
+  tests:
+    entity.py: null
+  main.py: null

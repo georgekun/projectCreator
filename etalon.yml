@@ -1,0 +1,31 @@
+src:
+  domains: 
+    entities: 
+      entity_1.py: null
+  use_cases:
+    entity_create_use_case.py: null
+  drivers:
+    fastapi:
+      app.py: null
+      main.py: null
+      routers: 
+        v1: 
+          handlers: null
+          routes: null
+          all_routes.py: null
+        v2: 
+          handlers: null
+          routes: null
+          all_routes.py: null
+  adapters:
+    repo: 
+      abstract_repo: 
+        non_abstract_repo.py: null
+  ports: 
+    abstract_repo.py: null
+
+  tests: 
+    conf_test.py: null
+
+docker-compose.yml: null
+requirements.txt: null
