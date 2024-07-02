@@ -30,12 +30,6 @@ Null - является заглушкой. Тобишь domains: null это п
 ```python3 project-cli.py createproject --plaintext=tests/test.yml --dest=.```, 
 где dest место назначения. plaintext вал yaml файл.
 
-Должно получиться:
-src
-├── domains
-├── main.py
-└── tests
-    └── entity.py
 
 P.S. я не совсем уверен пригодиться ли это кому нибудь еще это скрипт. Но мало ли кто либо еще посчитает применение этого скрипты полезным занятием в своей повседневной работе.
 
