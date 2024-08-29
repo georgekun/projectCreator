@@ -21,9 +21,9 @@ src:
     repo: 
       abstract_repo: 
         non_abstract_repo.py: null
+  .dockerfile: null
   ports: 
     abstract_repo.py: null
-
   tests: 
     conf_test.py: null
 

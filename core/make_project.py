@@ -3,6 +3,7 @@ import re
 
 
 class MakeProject:
+
     def __init__(self, destination_path: str = '.') -> None:
         self.destination_path = destination_path
         
@@ -27,7 +28,9 @@ class MakeProject:
                 
     def match_file(self, file_name: str) -> bool :
         base_name = os.path.basename(file_name)
-        if re.match(r'^[A-Za-z0-9_-]+\.[A-Za-z]{1,3}$', base_name):
+        if base_name.startswith("."):
+            return True
+        if re.match(r'^[A-Za-z0-9_-]+\.[A-Za-z]{1,10}$', base_name):
             return True
         return False
     
@@ -35,5 +38,4 @@ class MakeProject:
         os.makedirs(name, exist_ok=True)
     
     def create_file(self, name: str):
-        with open(name, 'w') as f:
-            pass
+        with open(name, 'w'): pass

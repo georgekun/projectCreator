@@ -21,6 +21,7 @@ test_data_from_yaml_file = {
                 }
             }
         },
+        ".dockerfile": None,
         'adapters': {
             'repo': {
                 'abstract_repo': {'non_abstract_repo.py': None}
@@ -62,4 +63,5 @@ def test_create_project(setup_project):
     assert os.path.exists(os.path.join(project_dir, 'src', 'tests', 'conf_test.py'))
     assert os.path.exists(os.path.join(project_dir, 'docker-compose.yml'))
     assert os.path.exists(os.path.join(project_dir, 'requirements.txt'))
+    assert os.path.isfile(os.path.join(project_dir, "src", ".dockerfile"))
 
